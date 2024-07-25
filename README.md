@@ -14,4 +14,6 @@ The script will need to be amended to select the path you require to save the Ex
 path_to_save = os.path.expanduser('/PATH_YOU_REQUIRE_HERE')
 ```
 
+This is my very first attempt at a code project...
+
 Any queries - or improvements - please email me: george.herd@bbc.co.uk
