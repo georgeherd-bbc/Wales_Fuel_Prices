@@ -7,6 +7,9 @@ It makes use of a number of dependencies - including BeautifulSoup4, Pandas, OS,
 The data is accessed from the UK Government's Access Fuel website, https://www.gov.uk/guidance/access-fuel-price-data, which provides weekly data supplied by voluntarily by a number of forecourt outlets -
 including supermarkets and major petroleum firms. It is not every petrol forecourt - it is only those partcipating.
 
+
+At present - the Morrisons and MFG data needs to be physically checked for duplicates - and the indexs returned deleted as necessary. This will be changed in a later version to use the IDs rather than indexes which can potentially change each week.
+
 The output files are in .xlsx format, using Pandas to_excel method.
 
 The script will need to be amended to select the path you require to save the Excel file - in the penultimate script section: 
