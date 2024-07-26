@@ -1,3 +1,5 @@
+*UPDATE: Version 2 of notebook with site_id filters is availabel in branch repository*
+
 The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in the Anaconda environment (Anaconda Navigator 2.5.2)
 
 It is a webscrapper that downloads fuel price data submitted by a large number of the UK's petrol forecourt sector, and is then filtered, and validated for Wales only postcodes, verified using the postcodes.io api.
