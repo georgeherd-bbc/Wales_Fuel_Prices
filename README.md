@@ -1,3 +1,12 @@
+*UPDATE: Version 2 - 26 07 2024*
+
+Wales_Fuel_Prices_02.ipynb notebook is updated to use site_id codes from scrapped json data to filter for duplicate enteries made in the Morrisons/MFG data.
+
+This should mean the Jupyter Notebook should continue to work to filter stations out, if the indexes change, due to count changes in reporting of stations.
+
+
+*VERSION 1 - 25 07 2024*
+
 The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in the Anaconda environment (Anaconda Navigator 2.5.2)
 
 It is a webscrapper that downloads fuel price data submitted by a large number of the UK's petrol forecourt sector, and is then filtered, and validated for Wales only postcodes, verified using the postcodes.io api.
