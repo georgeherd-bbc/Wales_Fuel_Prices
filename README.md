@@ -1,4 +1,4 @@
-*UPDATE: Version 2 of notebook with site_id filters is availabel in branch repository*
+*UPDATE: Version 2 of notebook with site_id filters is available in branch repository*
 
 The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in the Anaconda environment (Anaconda Navigator 2.5.2)
 
