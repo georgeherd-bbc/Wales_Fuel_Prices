@@ -25,7 +25,7 @@ These are included in a requirements.txt file
 
 *python3 -m venv venv*
 
-#### This tells Python to create a new directory called venv, which is where your virtual enviroment will run from
+#### This tells Python to create a new directory called venv, which is where your virtual enviroment (venv) will run from
 
 #### At prompt:
 **(FOR MACOS AND LINUX)**
@@ -37,15 +37,15 @@ These are included in a requirements.txt file
 
 **In cmd.exe**
 
-venv\Scripts\activate.bat
+*venv\Scripts\activate.bat*
 
-**In PowerShell**
+**or if using PowerShell**
 
-venv\Scripts\Activate.ps1
+*venv\Scripts\Activate.ps1*
 
 #### Prompt should now have (venv) proceeding to indicate you are working in a virtual environment
 
-#### The following commane will install all the necessary dependancies required to run the script:
+#### The following command will install all the necessary dependancies required to run the script:
 
 *pip install -r requirements.txt*
 
@@ -63,15 +63,15 @@ After going into a virtual environment - at prompt
 
 python run_script.py Wales_Fuel_Prices_02.1.py
 
-NOTE - ensure there are no spaces between names in the directory path - or Python will return an error.
+**NOTE** - ensure there are no spaces between names in the directory path - or Python will return an error. For example if your directory with the files is called **/my data project** - it won't work - while if the folder is called **/my_data_project** it will
 
 #### TO get out of virtual environment at the end, at prompt:
 
-deactivate
+*deactivate*
 
 **You can now safely delete the venv directory folder**
 
-rm -r venv
+*rm -r venv*
 
 
 
