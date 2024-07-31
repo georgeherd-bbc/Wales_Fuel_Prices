@@ -28,8 +28,20 @@ These are included in a requirements.txt file
 #### This tells Python to create a new directory called venv, which is where your virtual enviroment will run from
 
 #### At prompt:
+**(FOR MACOS AND LINUX)**
 
 *source venv/bin/activate*
+
+
+(FOR WINDOWS either CMD or Powershell)
+
+**In cmd.exe**
+
+venv\Scripts\activate.bat
+
+**In PowerShell**
+
+venv\Scripts\Activate.ps1
 
 #### Prompt should now have (venv) proceeding to indicate you are working in a virtual environment
 
@@ -43,6 +55,23 @@ These are included in a requirements.txt file
 
 
 #### NOTE: The script will take about 30 seconds to work - it's downloading and then filtering through 4,000 odd enteries scrapped from a dozen different locations. When it is completed - it will ask for the path directory.
+
+
+ALTERNATIVELY - DOWNLOAD THE ADDITIONAL SCRIPT run_script.py into the same directory as the wales_fuel_prices and requirements.txt files
+
+After going into a virtual environment - at prompt
+
+python run_script.py Wales_Fuel_Prices_02.1.py
+
+NOTE - ensure there are no spaces between names in the directory path - or Python will return an error.
+
+#### TO get out of virtual environment at the end, at prompt:
+
+deactivate
+
+**You can now safely delete the venv directory folder**
+
+rm -r venv
 
 
 
