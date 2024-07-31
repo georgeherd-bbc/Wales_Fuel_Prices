@@ -1,11 +1,6 @@
-*UPDATE: Version 2 - 26 07 2024*
-
-Wales_Fuel_Prices_02.ipynb notebook is updated to use site_id codes from scrapped json data to filter for duplicate enteries made in the Morrisons/MFG data.
-
-This should mean the Jupyter Notebook should continue to work to filter stations out, if the indexes change, due to count changes in reporting of stations.
 
 
-*VERSION 1 - 25 07 2024*
+DESCRIPTION:
 
 The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in the Anaconda environment (Anaconda Navigator 2.5.2)
 
@@ -18,7 +13,41 @@ requests
 pandas
 openpyxl
 
-These will be included in a requirements.txt, which can be run with pip freeze in a virtual environment
+These will be included in a requirements.txt.
+
+Python script: Wales_Fuel_Prices_02.1.py
+
+
+TO RUN THE PYTHON SCRIPT (best run in a virtual environment) using Python 3.4
+
+# In a terminal or cmd window - go to the path/directory where you have placed the python script Wales_Fuel_Prices_02.1.py
+# At prompt type:
+
+**python3 -m venv venv**
+
+#This tells Python to create a new directory called venv, which is where your virtual enviroment will run from
+
+#At prompt:
+
+**source venv/bin/activate**
+
+#Prompt should now have (venv) proceeding to indicate you are working in a virtual environment
+
+# The following commane will install all the necessary dependancies required to run the script:
+
+**pip install -r requirements.txt**
+
+#run the script - which will ask you to input the path directory to save your excel file to:
+
+**python Wales_Fuel_Prices_02.1.py
+
+
+NOTE: The script will take about 30 seconds to work - it's downloading and then filtering through 4,000 odd enteries scrapped from a dozen different locations. When it is completed - it will ask for the path directory.
+
+
+
+
+
 
 ___
 
