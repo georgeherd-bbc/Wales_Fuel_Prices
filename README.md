@@ -1,6 +1,6 @@
 
 
-DESCRIPTION:
+## DESCRIPTION:
 
 The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in the Anaconda environment (Anaconda Navigator 2.5.2)
 
@@ -8,41 +8,41 @@ It is a webscrapper that downloads fuel price data submitted by a large number o
 
 It makes use of a number of dependencies - including BeautifulSoup4, Pandas, OS, DateTime, json, and requests. Outside of Anaconda - if running as a Python Script - in Python 3.4 it will require the dependencies: 
 
-beautifulsoup4
-requests
-pandas
-openpyxl
+* beautifulsoup4
+* requests
+* pandas
+* openpyxl
 
-These will be included in a requirements.txt.
+These are included in a requirements.txt file
 
-Python script: Wales_Fuel_Prices_02.1.py
-
-
-TO RUN THE PYTHON SCRIPT (best run in a virtual environment) using Python 3.4
-
-# In a terminal or cmd window - go to the path/directory where you have placed the python script Wales_Fuel_Prices_02.1.py
-# At prompt type:
-
-**python3 -m venv venv**
-
-#This tells Python to create a new directory called venv, which is where your virtual enviroment will run from
-
-#At prompt:
-
-**source venv/bin/activate**
-
-#Prompt should now have (venv) proceeding to indicate you are working in a virtual environment
-
-# The following commane will install all the necessary dependancies required to run the script:
-
-**pip install -r requirements.txt**
-
-#run the script - which will ask you to input the path directory to save your excel file to:
-
-**python Wales_Fuel_Prices_02.1.py
+**Python script: Wales_Fuel_Prices_02.1.py**
 
 
-NOTE: The script will take about 30 seconds to work - it's downloading and then filtering through 4,000 odd enteries scrapped from a dozen different locations. When it is completed - it will ask for the path directory.
+### TO RUN THE PYTHON SCRIPT (best run in a virtual environment) using Python 3.4 - download the .py script and requirements.txt file to a desired folder location
+
+#### In a terminal or cmd window - go to the path/directory where you have placed the python script Wales_Fuel_Prices_02.1.py
+#### At prompt type:
+
+*python3 -m venv venv*
+
+#### This tells Python to create a new directory called venv, which is where your virtual enviroment will run from
+
+#### At prompt:
+
+*source venv/bin/activate*
+
+#### Prompt should now have (venv) proceeding to indicate you are working in a virtual environment
+
+#### The following commane will install all the necessary dependancies required to run the script:
+
+*pip install -r requirements.txt*
+
+#### run the script - which will ask you to input the path directory to save your excel file to:
+
+*python Wales_Fuel_Prices_02.1.py*
+
+
+#### NOTE: The script will take about 30 seconds to work - it's downloading and then filtering through 4,000 odd enteries scrapped from a dozen different locations. When it is completed - it will ask for the path directory.
 
 
 
@@ -53,19 +53,8 @@ ___
 
 
 The data is accessed from the UK Government's Access Fuel website, https://www.gov.uk/guidance/access-fuel-price-data, which provides weekly data supplied by voluntarily by a number of forecourt outlets -
-including supermarkets and major petroleum firms. It is not every petrol forecourt - it is only those partcipating.
+including supermarkets and major petroleum firms. It is not every petrol forecourt - it is only those partcipating - but it represents most of the major players in the sector.
 
-
-At present - the Morrisons and MFG data needs to be physically checked for duplicates - and the indexs returned deleted as necessary. This will be changed in a later version to use the IDs rather than indexes which can potentially change each week.
-
-The output files are in .xlsx format, using Pandas to_excel method.
-
-The script will need to be amended to select the path you require to save the Excel file - in the penultimate script section: 
-
-```
-# Specify the path to save the file 
-path_to_save = os.path.expanduser('/PATH_YOU_REQUIRE_HERE')
-```
 
 This is my very first attempt at a code project... so go easy on me!
 
