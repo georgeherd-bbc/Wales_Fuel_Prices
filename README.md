@@ -11,7 +11,17 @@ The Wales_Fuel_Prices.ipynb file is a Jupyter Notebook file (v.7.02) written in 
 
 It is a webscrapper that downloads fuel price data submitted by a large number of the UK's petrol forecourt sector, and is then filtered, and validated for Wales only postcodes, verified using the postcodes.io api.
 
-It makes use of a number of dependencies - including BeautifulSoup4, Pandas, OS, DateTime, json, and requests.
+It makes use of a number of dependencies - including BeautifulSoup4, Pandas, OS, DateTime, json, and requests. Outside of Anaconda - if running as a Python Script - in Python 3.4 it will require the dependencies: 
+
+beautifulsoup4
+requests
+pandas
+openpyxl
+
+These will be included in a requirements.txt, which can be run with pip freeze in a virtual environment
+
+___
+
 
 The data is accessed from the UK Government's Access Fuel website, https://www.gov.uk/guidance/access-fuel-price-data, which provides weekly data supplied by voluntarily by a number of forecourt outlets -
 including supermarkets and major petroleum firms. It is not every petrol forecourt - it is only those partcipating.
